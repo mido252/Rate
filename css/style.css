@@ -1,0 +1,113 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --btnColor: hsl(25, 97%, 53%);
+  --paragraphSize: 15px;
+}
+.display {
+  display: none;
+}
+.d-able {
+  pointer-events: none;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--VeryDarkBlue);
+}
+.card {
+  width: 22rem;
+  height: 22rem;
+  margin: 120px auto;
+  background-color: var(--DarkBlue);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card-container {
+  padding: 20px;
+  color: rgba(192, 192, 192, 0.674);
+}
+
+h4 {
+  color: #ffffff;
+}
+p {
+  letter-spacing: -0.5px;
+}
+.img-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 22%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+}
+
+#rate {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 22px;
+}
+.rank {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 22%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.rank:hover {
+  background-color: var(--btnColor) !important;
+}
+
+button {
+  width: 100%;
+  padding: 12px 8px;
+  background-color: var(--btnColor);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  color: var(--btnColor);
+  background-color: #fff;
+}
+
+.img-box {
+  margin-top: 30px;
+  text-align: center;
+}
+.card-info {
+  text-align: center;
+}
+h3 {
+  color: white;
+  text-transform: capitalize;
+}
+.select {
+  background-color: hsl(213, 19%, 22%);
+  color: var(--btnColor);
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 6px;
+  border-radius: 20px;
+}
